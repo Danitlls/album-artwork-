@@ -1,0 +1,26 @@
+// BUSINESS LOGIC
+ function Albums(name, artist, year, cover){
+   this.albumName = name;
+   this.albumArtist = artist;
+   this.albumYear = year;
+   this.albumCover = cover
+ }
+
+ var album1 = new Albums('Elephant', 'Tame Impala', '2012', '..img/impala.jpg');
+ var album2 = new Albums('King of the Delta Blues Singers', 'Robert Johnson', '1961', '../img/robert.jpg');
+ var album3 = new Albums('Kala', 'M.I.A.', '2007', '../img/mia.jpg');
+ var album4 = new Albums('Bitches Brew', 'Miles Davis', '1970', '..img/milesdavis.jpg');
+ var album5 = new Albums('Wish You Were Here', 'Pink Floyd', '1975', '../img/pinkfloyd.jpg');
+ var album6 = new Albums('LP1', 'Twigs', '2014', '../img/twigs.jpg');
+  var album7 = new Albums('The Velvet Underground & Nico', 'The Velvet Underground & Nico', '1967', '../img/velvet.jpg');
+  var album8 = new Albums('Its Blitz!', 'The Yeah Yeah Yeahs', '2009', '../img/yeahs.jpg');
+
+// FRONT END LOGIC
+  $(document).ready(function(){
+    var angle = 0;
+    function galleryspin(sign) {
+      spinner = document.querySelector("#spinner");
+      if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+      spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+    };
+  });
