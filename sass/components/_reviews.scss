@@ -1,6 +1,23 @@
 .user-reviews {
-  width:70%;
+  width:80%;
   margin: 80px auto;
   color: white;
-  background-color: grey;
+  padding: 10px;
+  ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    li {
+      background-color: #1f1e1f;
+      width: 20%;
+      height: 300px;
+      margin: 10px;
+      border: 1px solid #50b9d7;
+      list-style-type: none;
+      padding: 10px;
+    }
+  }
 }

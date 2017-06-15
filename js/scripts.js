@@ -16,6 +16,11 @@
   var album8 = new Albums('Its Blitz!', 'The Yeah Yeah Yeahs', '2009', '../img/yeahs.jpg');
 
 
+  function resetFields() {
+    $("input#user").val("");
+    $("textarea#comment").val("");
+  }
+
 // FRONT END LOGIC
   $(document).ready(function(){
     var angle = 0;
@@ -125,7 +130,10 @@
   $("form#review-form").submit(function(event){
     event.preventDefault();
     var userComment = $("textarea#comment").val();
-    $("#list-results").append("<li><span>" + userComment + "</span></li>");
+    var userName = $("input#user").val();
+    $("#list-results").append("<li><span>" + userName + " thinks..." + "<br>'" + userComment + "'</span></li>");
+
+     resetFields();
 
 
     });
