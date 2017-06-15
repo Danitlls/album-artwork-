@@ -1,11 +1,24 @@
 body {
   background-color: black;
+  font-family: "Open Sans";
+  #header {
+    font-family: "Cabin Sketch";
+    color: #FF00D2;
+    font-size: 90px;
+    text-align: center;
+    font-weight: lighter;
+  }
+}
+
+.carousel-container {
+  width: 80%;
+  margin: auto;
 }
 
 div#carousel {
   perspective: 1200px;
   background: black;
-  padding-top: 10%;
+  padding-top: 2%;
   font-size:0;
   height:50vh;
 }
@@ -17,7 +30,8 @@ figure#spinner {
 }
 figure#spinner img {
   width: 50%; max-width: 425px;
-  position: absolute; left: 40%;
+  position: absolute;
+  left: 35%;
   transform-origin: 50% 50% -500px;
   outline:1px solid transparent;
 }

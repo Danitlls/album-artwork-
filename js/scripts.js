@@ -104,5 +104,29 @@
 
     $(".close-button").click( function() {
       $(".album-info").fadeOut();
+      $(".rating").removeClass("vote-cast");
+    });
+
+
+    // stars
+    $(function () {
+    $('li').on('click', function() {
+      var selectedCssClass = 'selected';
+      var $this = $(this);
+      $this.siblings('.' + selectedCssClass).removeClass(selectedCssClass);
+      $this
+        .addClass(selectedCssClass)
+        .parent().addClass('vote-cast');
+    });
+  }
+);
+
+  // review form
+  $("form#review-form").submit(function(event){
+    event.preventDefault();
+    var userComment = $("textarea#comment").val();
+    $("#list-results").append("<li><span>" + userComment + "</span></li>");
+
+
     });
 });

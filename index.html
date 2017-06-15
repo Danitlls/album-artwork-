@@ -6,32 +6,55 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="https://use.fontawesome.com/7df094b997.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Open+Sans" rel="stylesheet">
     <title>Album Artwork</title>
   </head>
   <body>
-    <base href="img/mia.jpg">
-    <div id="carousel">
-      <figure id="spinner">
-        <img id="impala" src="../img/impala.jpg">
-        <img id="mia" src="../img/mia.jpg">
-        <img id="miles" src="../img/milesdavis.jpg">
-        <img id="pink" src="../img/pinkfloyd.jpg">
-        <img id="twigs" src="../img/twigs.jpg">
-        <img id="velvet" src="../img/velvet.jpg">
-        <img id="yeahs" src="../img/yeahs.jpg">
-        <img id="robert" src="../img/robert.jpg">
-      </figure>
+    <h1 id="header">Album Extravaganza</h1>
+
+    <div class="carousel-container">
+      <base href="img/mia.jpg">
+      <div id="carousel">
+        <figure id="spinner">
+          <img id="impala" src="../img/impala.jpg">
+          <img id="mia" src="../img/mia.jpg">
+          <img id="miles" src="../img/milesdavis.jpg">
+          <img id="pink" src="../img/pinkfloyd.jpg">
+          <img id="twigs" src="../img/twigs.jpg">
+          <img id="velvet" src="../img/velvet.jpg">
+          <img id="yeahs" src="../img/yeahs.jpg">
+          <img id="robert" src="../img/robert.jpg">
+        </figure>
+      </div>
+      <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+      <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
     </div>
 
-    <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
-    <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
-
     <div class="album-info">
+      <!--close button-->
+      <i class="close-button fa fa-times-circle" aria-hidden="true"></i>
       <h1>Album: <span id="album-info-album"></span></h1>
       <h2>Artist: <span id="album-info-artist"></span></h2>
       <h2>Year: <span id="album-info-year"></span></h2>
-      <!-- button-->
-      <i class="close-button fa fa-times-circle" aria-hidden="true"></i>
+      <h3>Rate this album:</h3>
+      <ul class="rating">
+        <li class="star">&#9733;</li>
+        <li class="star">&#9733;</li>
+        <li class="star">&#9733;</li>
+        <li class="star">&#9733;</li>
+        <li class="star">&#9733;</li>
+      </ul>
+      <h3>Leave a review:</h3>
+      <form id="review-form">
+        <textarea id="comment" rows="4" cols="80">hello</textarea><br>
+        <button type="submit" name="button">Submit!</button>
+      </form>
+    </div>
+
+    <div class="user-reviews">
+      <ul id="list-results">
+        
+      </ul>
     </div>
 
 
