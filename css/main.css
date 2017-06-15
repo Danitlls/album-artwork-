@@ -430,10 +430,10 @@ figure#spinner {
 }
 
 figure#spinner img {
-  width: 40%;
+  width: 50%;
   max-width: 425px;
   position: absolute;
-  left: 30%;
+  left: 40%;
   transform-origin: 50% 50% -500px;
   outline: 1px solid transparent;
 }
@@ -491,6 +491,15 @@ div#carousel ~ span:hover {
 .album-info {
   display: none;
   color: white;
+  border: 1px solid yellow;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.album-info i {
+  font-size: 30px;
+  display: flex;
+  align-self: flex-end;
 }
 
 /*# sourceMappingURL=main.css.map */

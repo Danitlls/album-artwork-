@@ -16,8 +16,8 @@ figure#spinner {
   transition: 1s;
 }
 figure#spinner img {
-  width: 40%; max-width: 425px;
-  position: absolute; left: 30%;
+  width: 50%; max-width: 425px;
+  position: absolute; left: 40%;
   transform-origin: 50% 50% -500px;
   outline:1px solid transparent;
 }
@@ -42,9 +42,3 @@ div#carousel ~ span {
   border-bottom: none;
   line-height: 0; }
 div#carousel ~ span:hover { color: #888; cursor: pointer; }
-
-
-.album-info {
-  display: none;
-  color: white;
-}
