@@ -488,4 +488,9 @@ div#carousel ~ span:hover {
   cursor: pointer;
 }
 
+.album-info {
+  display: none;
+  color: white;
+}
+
 /*# sourceMappingURL=main.css.map */
