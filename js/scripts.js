@@ -37,7 +37,7 @@
     // album info fadein/fadeout
     $("#impala").hover(
       function () {
-     $(".album-info").fadeIn('slow');
+     $(".album-info").fadeIn(1000);
      $("#album-info-album").text(album1.albumName);
      $("#album-info-artist").text(album1.albumArtist);
      $("#album-info-year").text(album1.albumYear);
@@ -46,7 +46,7 @@
 
     $("#robert").hover(
       function () {
-     $(".album-info").fadeIn('slow');
+     $(".album-info").fadeIn(1000);
      $("#album-info-album").text(album2.albumName);
      $("#album-info-artist").text(album2.albumArtist);
      $("#album-info-year").text(album2.albumYear);
@@ -55,7 +55,7 @@
 
     $("#mia").hover(
       function () {
-     $(".album-info").fadeIn('slow');
+     $(".album-info").fadeIn(1000);
      $("#album-info-album").text(album3.albumName);
      $("#album-info-artist").text(album3.albumArtist);
      $("#album-info-year").text(album3.albumYear);
@@ -64,7 +64,7 @@
 
     $("#miles").hover(
       function () {
-     $(".album-info").fadeIn('slow');
+     $(".album-info").fadeIn(1000);
      $("#album-info-album").text(album4.albumName);
      $("#album-info-artist").text(album4.albumArtist);
      $("#album-info-year").text(album4.albumYear);
@@ -73,7 +73,7 @@
 
     $("#pink").hover(
       function () {
-     $(".album-info").fadeIn('slow');
+     $(".album-info").fadeIn(1000);
      $("#album-info-album").text(album5.albumName);
      $("#album-info-artist").text(album5.albumArtist);
      $("#album-info-year").text(album5.albumYear);
@@ -82,7 +82,7 @@
 
     $("#twigs").hover(
       function () {
-     $(".album-info").fadeIn('slow');
+     $(".album-info").fadeIn(1000);
      $("#album-info-album").text(album6.albumName);
      $("#album-info-artist").text(album6.albumArtist);
      $("#album-info-year").text(album6.albumYear);
@@ -91,7 +91,7 @@
 
     $("#velvet").hover(
       function () {
-     $(".album-info").fadeIn('slow');
+     $(".album-info").fadeIn(1000);
      $("#album-info-album").text(album7.albumName);
      $("#album-info-artist").text(album7.albumArtist);
      $("#album-info-year").text(album7.albumYear);
@@ -100,7 +100,7 @@
 
     $("#yeahs").hover(
       function () {
-     $(".album-info").fadeIn('slow');
+     $(".album-info").fadeIn(1000);
      $("#album-info-album").text(album8.albumName);
      $("#album-info-artist").text(album8.albumArtist);
      $("#album-info-year").text(album8.albumYear);
